@@ -3,8 +3,10 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  template: 'probandaaa',
   standalone: true,
+  template: `
+  <h1>Hello</h1>`,
+  //styleUrls:  ['./']
 })
 export class AppComponent {
   title = 'FirstProjectAngular';
