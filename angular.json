@@ -67,12 +67,18 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 3000,
+            "host": "0.0.0.0"
+          },
           "configurations": {
             "production": {
               "buildTarget": "FirstProjectAngular:build:production"
             },
             "development": {
-              "buildTarget": "FirstProjectAngular:build:development"
+              "buildTarget": "FirstProjectAngular:build:development",
+              "host": "0.0.0.0",
+              "port": 3000
             }
           },
           "defaultConfiguration": "development"
@@ -103,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
